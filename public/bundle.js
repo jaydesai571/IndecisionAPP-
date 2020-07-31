@@ -65,9 +65,44 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-console.log('App is running 11');
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(1);
+// import './utils.js';
+// import { sqaure, add } from './utils.js';
+
+
+console.log('App is running');
+console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["b" /* isAdult */](18));
+console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["a" /* canDrink */](19));
+
+// console.log(sqaure(4));
+// console.log(add(100,2000));
+
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+console.log('Utils.js is running');
+
+// const sqaure = (x) => x*x;
+
+// const add = (a,b) => a+b;
+
+// export { sqaure, add };
+
+const isAdult = (x) => x >= 18;
+/* harmony export (immutable) */ __webpack_exports__["b"] = isAdult;
+
+
+const canDrink = (x) => x >= 19;
+/* harmony export (immutable) */ __webpack_exports__["a"] = canDrink;
+
 
 /***/ })
 /******/ ]);
