@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import IndecisionApp from './components/IndecisionApp';
 
+ReactDom.render(<IndecisionApp options={['Devils den', 'second District']} />,document.getElementById('app'));
+
+// childern to parent data passing.
 // const Layout = (props) => {
 //     return (
 //         <div>
@@ -19,4 +22,3 @@ import IndecisionApp from './components/IndecisionApp';
 //     </div>
 // );
 // ReactDom.render(<Layout content= {template} />,document.getElementById('app'));
-ReactDom.render(<IndecisionApp options={['Devils den', 'second District']} />,document.getElementById('app'));
