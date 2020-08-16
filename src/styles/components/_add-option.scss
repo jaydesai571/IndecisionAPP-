@@ -7,6 +7,7 @@
 
 .add-option {
     display: flex;   
+    flex-direction: column;
     padding: $m-size;
 
 }
@@ -19,4 +20,16 @@
     color: white;
     padding: $s-size;
     flex-grow: 1;
+    margin: 0 0 $s-size 0;
+    padding: $s-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .add-option {
+        flex-direction: row;
+    }
+
+    .add-option__input {
+        margin: 0 $s-size 0 0; 
+    }
 }
